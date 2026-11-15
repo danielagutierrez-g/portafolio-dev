@@ -1,0 +1,33 @@
+:root {
+  color-scheme: light;
+  --paper: #fbfaf7;
+  --surface: #fff;
+  --ink: #20231f;
+  --muted: #737770;
+  --line: #e8e7e1;
+  --tag: #f0f1eb;
+  --accent: #587d62;
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}

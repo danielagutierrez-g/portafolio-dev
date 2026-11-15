@@ -1,0 +1,86 @@
+<header class="site-header">
+  <a class="brand" href="#inicio">Daniela <span>· Portafolio</span></a>
+  <nav aria-label="Navegación principal">
+    <a href="#proyectos">Proyectos</a>
+    <a href="#perfil">Perfil</a>
+    <a href="https://github.com/danielagutierrez-g" target="_blank" rel="noreferrer">GitHub</a>
+  </nav>
+</header>
+
+<main>
+  <section class="intro" id="inicio">
+    <p class="eyebrow">Portafolio académico</p>
+    <h1>Hola, soy Daniela.</h1>
+    <p class="intro-copy">
+      Aquí reúno proyectos y ejercicios de desarrollo de software. Cada tarjeta incluye
+      el código y una versión web para probar.
+    </p>
+    <a class="button button-dark" href="#proyectos">Ver proyectos <span aria-hidden="true">↓</span></a>
+  </section>
+
+  <section class="projects-section" id="proyectos">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Trabajo reciente</p>
+        <h2>Proyectos</h2>
+      </div>
+      <p class="section-note">Cinco aplicaciones pequeñas, con tecnologías y objetivos distintos.</p>
+    </div>
+
+    <div class="project-grid">
+      @for (project of projects; track project.name) {
+        <article class="project-card">
+          <div class="card-topline">
+            <span class="project-number">{{ project.number }}</span>
+            <span class="project-type">{{ project.type }}</span>
+          </div>
+          <h3>{{ project.name }}</h3>
+          <p class="project-description">{{ project.description }}</p>
+          <ul class="tag-list" aria-label="Tecnologías">
+            @for (technology of project.technologies; track technology) {
+              <li>{{ technology }}</li>
+            }
+          </ul>
+          <div class="card-links">
+            <a [href]="project.repository" target="_blank" rel="noreferrer">Código <span aria-hidden="true">↗</span></a>
+            <a [href]="project.demo" target="_blank" rel="noreferrer">Ver demo <span aria-hidden="true">↗</span></a>
+          </div>
+          @if (project.sourceRepository) {
+            <a class="source-link" [href]="project.sourceRepository" target="_blank" rel="noreferrer">
+              Proyecto de referencia
+            </a>
+          }
+        </article>
+      }
+    </div>
+    <p class="demo-note">
+      Las demos de esta entrega son aplicaciones independientes que guardan datos en el navegador.
+      No se conectan a los servicios Java de referencia.
+    </p>
+  </section>
+
+  <section class="profile-section" id="perfil">
+    <div>
+      <p class="eyebrow">Un poco sobre mí</p>
+      <h2>Aprender haciendo.</h2>
+    </div>
+    <div class="profile-copy">
+      <p>
+        Soy estudiante de ingeniería y me interesa construir aplicaciones claras y útiles.
+        En estos proyectos practico organización de componentes, manejo de datos y desarrollo web.
+      </p>
+      <div class="skill-list" aria-label="Tecnologías que estoy practicando">
+        <span>Angular</span>
+        <span>TypeScript</span>
+        <span>Java</span>
+        <span>Spring Boot</span>
+        <span>HTML y CSS</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>Daniela</span>
+  <a href="https://github.com/danielagutierrez-g" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+</footer>
