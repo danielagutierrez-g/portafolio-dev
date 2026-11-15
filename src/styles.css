@@ -1,12 +1,16 @@
 :root {
   color-scheme: light;
-  --paper: #fbfaf7;
-  --surface: #fff;
-  --ink: #20231f;
-  --muted: #737770;
-  --line: #e8e7e1;
-  --tag: #f0f1eb;
-  --accent: #587d62;
+  --paper: #fffaf3;
+  --surface: #fffefa;
+  --ink: #282534;
+  --muted: #777386;
+  --line: #ece6dc;
+  --tag: #f3efe8;
+  --accent: #7257d5;
+  --accent-soft: #efe9ff;
+  --coral: #e98d68;
+  --coral-soft: #ffeadf;
+  --coral-ink: #c16b4b;
   font-family: Inter, "Segoe UI", Arial, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,7 +27,9 @@ html {
 body {
   min-width: 320px;
   margin: 0;
-  background: var(--paper);
+  background:
+    radial-gradient(ellipse at 4% 8%, rgb(255 234 223 / 35%), transparent 29rem),
+    var(--paper);
   color: var(--ink);
 }
 

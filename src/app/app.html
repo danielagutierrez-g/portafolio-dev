@@ -1,28 +1,58 @@
 <header class="site-header">
-  <a class="brand" href="#inicio">Daniela <span>· Portafolio</span></a>
+  <a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">d.</span> Daniela <span>· Portafolio</span></a>
   <nav aria-label="Navegación principal">
     <a href="#proyectos">Proyectos</a>
     <a href="#perfil">Perfil</a>
-    <a href="https://github.com/danielagutierrez-g" target="_blank" rel="noreferrer">GitHub</a>
+    <a class="nav-github" href="https://github.com/danielagutierrez-g" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
   </nav>
 </header>
 
 <main>
   <section class="intro" id="inicio">
-    <p class="eyebrow">Portafolio académico</p>
-    <h1>Hola, soy Daniela.</h1>
-    <p class="intro-copy">
-      Aquí reúno proyectos y ejercicios de desarrollo de software. Cada tarjeta incluye
-      el código y una versión web para probar.
-    </p>
-    <a class="button button-dark" href="#proyectos">Ver proyectos <span aria-hidden="true">↓</span></a>
+    <div class="intro-copy-block">
+      <p class="eyebrow"><span aria-hidden="true"></span> Portafolio académico</p>
+      <h1>Hola, soy <span>Daniela.</span><br />Creo, pruebo y <em>aprendo.</em></h1>
+      <p class="intro-copy">
+        Soy estudiante de ingeniería y me gusta convertir ideas en proyectos web claros,
+        útiles y hechos con curiosidad.
+      </p>
+      <div class="intro-actions">
+        <a class="button button-dark" href="#proyectos">Explorar proyectos <span aria-hidden="true">↓</span></a>
+        <a class="text-link" href="https://github.com/danielagutierrez-g" target="_blank" rel="noreferrer">
+          Mi GitHub <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <div class="hero-facts" aria-label="Resumen del portafolio">
+        <div><strong>05</strong><span>proyectos</span></div>
+        <div><strong>04</strong><span>demos web</span></div>
+        <div><strong>∞</strong><span>cosas por aprender</span></div>
+      </div>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <div class="art-sun"></div>
+      <div class="code-card">
+        <div class="code-card-top">
+          <span class="window-dots"><i></i><i></i><i></i></span>
+          <span>una-idea.ts</span>
+        </div>
+        <div class="code-content">
+          <p><span>01</span><code><b>const</b> camino = &#123;</code></p>
+          <p><span>02</span><code>&nbsp; curiosidad: <i>true</i>,</code></p>
+          <p><span>03</span><code>&nbsp; practica: <i>"cada día"</i>,</code></p>
+          <p><span>04</span><code>&nbsp; resultado: <i>"en progreso"</i></code></p>
+          <p><span>05</span><code>&#125;;</code></p>
+        </div>
+        <div class="code-card-bottom"><span></span> Siempre aprendiendo</div>
+      </div>
+    </div>
   </section>
 
   <section class="projects-section" id="proyectos">
     <div class="section-heading">
       <div>
-        <p class="eyebrow">Trabajo reciente</p>
-        <h2>Proyectos</h2>
+        <p class="eyebrow"><span aria-hidden="true"></span> Un poco de lo que hago</p>
+        <h2>Proyectos <span class="heading-spark" aria-hidden="true">✳</span></h2>
       </div>
       <p class="section-note">Cinco aplicaciones pequeñas, con tecnologías y objetivos distintos.</p>
     </div>
@@ -61,8 +91,8 @@
 
   <section class="profile-section" id="perfil">
     <div>
-      <p class="eyebrow">Un poco sobre mí</p>
-      <h2>Aprender haciendo.</h2>
+      <p class="eyebrow"><span aria-hidden="true"></span> Un poco sobre mí</p>
+      <h2>Aprender<br /><em>haciendo.</em></h2>
     </div>
     <div class="profile-copy">
       <p>
